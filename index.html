@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GA Wears | Premium Fashion</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --cream: #EDE7C7;
+            --dark-brown: #200E01;
+            --burgundy: #5B0202;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--cream);
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-brown);
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 60px;
+            border-bottom: 1px solid rgba(32,14,1,0.15);
+        }
+
+        .navbar img {
+            height: 52px;
+        }
+
+        .nav-links a {
+            margin-left: 32px;
+            text-decoration: none;
+            color: var(--dark-brown);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--burgundy);
+        }
+
+        /* HERO */
+        .hero {
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero button {
+            background-color: var(--burgundy);
+            color: #fff;
+            border: none;
+            padding: 14px 36px;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+
+        /* SECTION */
+        .section {
+            padding: 90px 60px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            max-width: 700px;
+            margin: auto;
+            opacity: 0.85;
+        }
+
+        /* COLLECTIONS */
+        .collection-box {
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .collection-image img {
+            width: 320px;
+            border-radius: 8px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .collection-content {
+            max-width: 420px;
+            text-align: left;
+        }
+
+        .collection-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--burgundy);
+            color: #fff;
+            padding: 6px 14px;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .collection-content p {
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        .checkout-btn {
+            display: inline-block;
+            background-color: var(--dark-brown);
+            color: #fff;
+            padding: 12px 28px;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .checkout-btn:hover {
+            background-color: var(--burgundy);
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid rgba(32,14,1,0.15);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 16px 24px;
+            }
+
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+
+            .collection-content {
+                text-align: center;
+            }
+        }
+        /* =========================
+   FULL RESPONSIVE ENHANCEMENTS
+   (No existing code modified)
+   ========================= */
+
+/* Prevent horizontal overflow on small devices */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Make buttons and text easier to tap on mobile */
+@media (max-width: 600px) {
+  .btn {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+}
+
+/* Navigation responsiveness */
+@media (max-width: 768px) {
+  .nav-flex {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+}
+
+/* Hero section spacing and text scaling */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    padding: 0 10px;
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+  section {
+    padding: 70px 0;
+  }
+
+  .container {
+    width: 92%;
+  }
+}
+
+/* Mobile-first layout tightening */
+@media (max-width: 480px) {
+  section {
+    padding: 50px 0;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  footer p {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+}
+
+/* Grid stability on very small screens */
+@media (max-width: 360px) {
+  .about-grid,
+  .products-grid {
+    gap: 20px;
+  }
+}
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <img src="logo.png" alt="GA Wears Logo">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#"></a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div>
+            <h1>Trendy &<br>Timeless Fashion.</h1>
+            <p>
+                GA Wears is built for the present. We create trend-forward clothing that feels premium, looks effortless, and speaks without being loud.
+            </p>
+            <button onclick="document.getElementById('collections').scrollIntoView({behavior:'smooth'})">
+                EXPLORE COLLECTION
+            </button>
+        </div>
+    </section>
+
+    <!-- OUR COLLECTIONS -->
+    <section class="section" id="collections">
+        <h2>Our Collections</h2>
+        <p>Discover exclusive drops crafted with trend.</p>
+
+        <div class="collection-box">
+            <div class="collection-image">
+                <img src="jana-nayagan-tshirt.png" alt="Jana Nayagan T-Shirt">
+            </div>
+
+            <div class="collection-content">
+                <span class="badge">NEW ARRIVAL</span>
+                <h3>JANA NAYAGAN<br>T-Shirt Collection</h3>
+                <p>
+                    Jana Nayagan – One Last Time | Thalapathy Vijay Tribute Unisex T-Shirt
+                </p>
+
+                <!-- CHECKOUT LINK -->
+                <a href="https://gawears.blinkstore.ai/product/jana-nayagan-one-last-time-thalapathy-vijay-tribute-unisex-t-shirt-cui4e" target="_blank" class="checkout-btn">
+                    CHECK OUT
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 GA Wears. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
